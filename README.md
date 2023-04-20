@@ -1,2 +1,2 @@
 # The-Hot-Platform-Sign-In
-Sign In Page for Professional and Business Account
+Sign In Pages for Professional and Business Account
