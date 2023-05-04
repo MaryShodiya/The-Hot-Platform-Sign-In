@@ -11,4 +11,5 @@ export { default as GroupIcon } from "./GroupIcon";
 export { default as CustomerSupportIcon } from "./CustomerSupportIcon";
 export { default as WidgetIcon } from "./WidgetCardIcon";
 export { default as ProductsIcon } from "./ProductsIcon";
+export { default as ProfileImage } from './Profile'
 

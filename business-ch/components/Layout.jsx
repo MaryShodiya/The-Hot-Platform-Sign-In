@@ -1,6 +1,8 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 import SearchBar from "./SearchBar";
+import { ProfileImage } from "./icons";
+
 
 
 
@@ -40,13 +42,7 @@ const Layout = ({ children }) => {
             </div>
 
           <div className="flex relative">
-          <img className="img-responsive rounded-full ml-9 mr-6 mt-4 "
-            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
-          
-            style={{height: 34 , width: 44, }}
-            alt=""
-            loading="lazy" />
-        
+          <ProfileImage  />
         </div>
        
          </div>

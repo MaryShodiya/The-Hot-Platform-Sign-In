@@ -2,7 +2,10 @@ import Layout from '../components/Layout'
 import ContentChart from '../components/ContentChart'
 import PieContentChart from '../components/PieChart';
 import RatingCharts from '../components/RatingChart';
-import { WidgetIcon } from '../components/icons';
+import Image from 'next/image';
+import ProfileImage from './profile.jpeg';
+
+
 
 
 export default function Home() {
@@ -125,17 +128,13 @@ export default function Home() {
   <div className="flex w-full flex-wrap items-center justify-between px-3">
   <div>
       <a
-        className="my-1 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+        className="my-1 mr-2 flex items-center  lg:mb-0 lg:mt-0"
         href="#">
-        <img className="mr-2 rounded-full"
-            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
-          
-            style={{height: 34 , width: 34, }}
-            alt=""
-            loading="lazy" />
-        <span className="font-medium dark:text-neutral-200">Jenny Van, Ini</span>
+        <Image className="mr-2 rounded-full w-10 h-10 outline outline-offset-4 outline-primary"
+            src={ProfileImage} alt="flex image"/>
+        <span className="font-medium dark:text-neutral-200 ml-8">Jenny Van, Ini</span>
       </a>
-      <p className="text-grey pl-8 items-center"> Hoorn Netherlands</p>
+      <p className="text-grey pl-9 items-center ml-8"> Hoorn Netherlands</p>
     </div>
   </div>
   </div>
@@ -146,37 +145,13 @@ export default function Home() {
   <div className="flex w-full flex-wrap items-center justify-between px-3">
   <div>
       <a
-        className="my-1 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+        className="my-1 mr-2 flex items-center lg:mb-0 lg:mt-0"
         href="#">
-        <img className="mr-2 rounded-full"
-            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
-          
-            style={{height: 34 , width: 34, }}
-            alt=""
-            loading="lazy" />
-        <span className="font-medium dark:text-neutral-200">Jenny Van, Ini</span>
+       <Image className="mr-2 rounded-full w-10 h-10 outline outline-offset-4 outline-primary"
+            src={ProfileImage} alt="flex image"/>
+        <span className="font-medium dark:text-neutral-200 ml-8">Jenny Van, Ini</span>
       </a>
-      <p className="text-grey pl-8 items-center"> Hoorn Netherlands</p>
-    </div>
-  </div>
-  </div>
-
-  <div
-  className="relative flex w-full flex-wrap items-center justify-between bg-greyfive  rounded-lg  mb-5 text-black shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
-  <div className="flex w-full flex-wrap items-center justify-between px-3">
-  <div>
-      <a
-        className="my-1 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
-        href="#">
-        <img className="mr-2 rounded-full"
-            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
-          
-            style={{height: 34 , width: 34, }}
-            alt=""
-            loading="lazy" />
-        <span className="font-medium dark:text-neutral-200">Jenny Van, Ini</span>
-      </a>
-      <p className="text-grey pl-8 items-center"> Hoorn Netherlands</p>
+      <p className="text-grey pl-9 items-center ml-8"> Hoorn Netherlands</p>
     </div>
   </div>
   </div>
@@ -184,32 +159,40 @@ export default function Home() {
   <div
   className="relative flex w-full flex-wrap items-center justify-between bg-greyfive rounded-lg  mb-5 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
   <div class="flex w-full  items-center justify-between px-3">
-    <div>
+  <div>
       <a
-        className="my-1 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+        className="my-1 mr-2 flex items-center  lg:mb-0 lg:mt-0"
         href="#">
-        <img className="mr-2 rounded-full"
-            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
-          
-            style={{height: 34 , width: 34, }}
-            alt=""
-            loading="lazy" />
-        <span className="font-medium dark:text-neutral-200">Jenny Van, Ini</span>
+     <Image className="mr-2 rounded-full w-10 h-10 outline outline-offset-4 outline-primary"
+            src={ProfileImage} alt="flex image"/>
+        <span className="font-medium dark:text-neutral-200 ml-8">Jenny Van, Ini</span>
       </a>
-      <p className="text-grey pl-8 items-center"> Hoorn Netherlands</p>
+      <p className="text-grey pl-9 items-center ml-8"> Hoorn Netherlands</p>
     </div>
 
   </div>
-  
-  
-
-
-
-
-
-
-        
+   
        </div>
+
+  <div
+  className="relative flex w-full flex-wrap items-center justify-between bg-greyfive rounded-lg  mb-5 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
+  <div class="flex w-full  items-center justify-between px-3">
+  <div>
+      <a
+        className="my-1 mr-2 flex items-center  lg:mb-0 lg:mt-0"
+        href="#">
+     <Image className="mr-2 rounded-full w-10 h-10 outline outline-offset-4 outline-primary"
+            src={ProfileImage} alt="flex image"/>
+        <span className="font-medium dark:text-neutral-200 ml-8">Jenny Van, Ini</span>
+      </a>
+      <p className="text-grey pl-9 items-center ml-8"> Hoorn Netherlands</p>
+    </div>
+
+  </div>
+   
+       </div>
+
+
     </div>
 
   </div>

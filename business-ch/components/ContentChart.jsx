@@ -88,7 +88,7 @@ function ChartContent() {
 
   return (
     <div className="flex flex-col items-center  justify-center">
-      <div class="grid grid-cols-3">
+      <div className="grid grid-cols-3">
       <h1 className="text-left font-medium mb-4 pl-3 ">Total Users</h1>
       <p className="text-xs text-grey"> Profile visit </p>
       <p className="text-xs text-grey"> Operating Status </p>
