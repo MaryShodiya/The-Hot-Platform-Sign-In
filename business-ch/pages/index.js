@@ -158,7 +158,7 @@ export default function Home() {
 
   <div
   className="relative flex w-full flex-wrap items-center justify-between bg-greyfive rounded-lg  mb-5 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
-  <div class="flex w-full  items-center justify-between px-3">
+  <div className="flex w-full  items-center justify-between px-3">
   <div>
       <a
         className="my-1 mr-2 flex items-center  lg:mb-0 lg:mt-0"
@@ -176,7 +176,7 @@ export default function Home() {
 
   <div
   className="relative flex w-full flex-wrap items-center justify-between bg-greyfive rounded-lg  mb-5 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
-  <div class="flex w-full  items-center justify-between px-3">
+  <div className="flex w-full  items-center justify-between px-3">
   <div>
       <a
         className="my-1 mr-2 flex items-center  lg:mb-0 lg:mt-0"
