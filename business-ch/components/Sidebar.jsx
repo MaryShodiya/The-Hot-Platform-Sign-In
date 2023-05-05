@@ -115,7 +115,7 @@ const menuItems = [
                   <Link href={menu.link}>
                     <a className="flex py-4 px-3 items-center w-full h-full">
                       <div style={{ width: "2.5rem"}}>
-                        <Icon  />
+                  <Icon />
                       </div>
                   
                     
