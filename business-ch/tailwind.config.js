@@ -34,7 +34,8 @@ module.exports = {
         tertiary: "#e2b852",
       },
     },
-    extend: {},
+    extend: {
+    },
   },
   variants: {
     fill: ['hover', 'focus']

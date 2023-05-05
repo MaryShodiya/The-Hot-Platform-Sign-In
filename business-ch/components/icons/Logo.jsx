@@ -4,7 +4,7 @@ import logo from '../icons/logo.png'
 
 function Logo() {
   return (
- <Image src={logo} height={100} width={100}/>
+ <Image src={logo} height={100} width={100} alt="logo" />
   );
 }
 
