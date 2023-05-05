@@ -111,7 +111,7 @@ const menuItems = [
             {menuItems.map(({ icon: Icon, ...menu }) => {
               const classes = getNavItemClasses(menu);
               return (
-                <div className={classes}>
+                <div key={menu.link} className={classes}>
                   <Link href={menu.link}>
                     <a className="flex py-4 px-3 items-center w-full h-full">
                       <div style={{ width: "2.5rem"}}>
