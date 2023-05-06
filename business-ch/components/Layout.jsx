@@ -14,8 +14,9 @@ const Layout = ({ children }) => {
       <Sidebar />
       
       <div className="bg-greyfour flex-1">
-      <div className="flex-no-wrap flex w-full  justify-between bg-white  py-2  ">
-      <div className="relative flex flex-wrap  w-full justify-between bg-neutral-900 py-2 text-neutral-200  lg:justify-start lg:py-4" >
+
+      <div className="flex-no-wrap flex w-full  justify-between bg-white  py-2">
+      <div className="relative flex flex-wrap  w-full justify-between py-2  lg:justify-start lg:py-4" >
         <SearchBar />
 
 </div>
@@ -43,7 +44,14 @@ const Layout = ({ children }) => {
 
           <div className="flex relative">
           <ProfileImage  />
-        </div>
+          <span class="top-4 left-9 absolute  w-3.5 h-3.5 bg-green border-2 border-white dark:border-green rounded-full"></span>
+   
+          <div className="font-medium dark:text-black">
+        <div>Ebere</div>
+        <div className="text-sm text-primary dark:text-grey">Business Account</div>
+    </div>
+    </div>
+        
        
          </div>
        

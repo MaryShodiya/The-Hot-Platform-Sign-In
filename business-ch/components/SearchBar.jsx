@@ -3,7 +3,7 @@ import * as React from "react";
 function SearchBar({ stroke = "#bdbdbd", ...rest }) {
   return (
 <form className="max-w-sm px-4">
-            <div className="relative">
+            <div className="relative ">
                 <svg stroke="#bdbdbd"
                     xmlns="http://www.w3.org/2000/svg"
                     className="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-400 left-3"

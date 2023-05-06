@@ -13,7 +13,7 @@ function RatingCharts() {
       labels: ["Non Followers", "Followers", "Weekly Target"],
       datasets: [
         {
-          backgroundColor: ["#000000", "#f5e7c5", '#000000'],
+          backgroundColor: ["#E2b852", "#f5e7c5", '#000000'],
           data: [20, 80, 50],
           active: false,
         },

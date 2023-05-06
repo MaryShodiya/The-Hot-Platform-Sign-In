@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function LogoutIcon({ fill = "#bdbdbd", ...rest }) {
+function LogoutIcon({ fill = "#fff", ...rest }) {
   return (
     <svg
       width={16}

@@ -1,8 +1,8 @@
 import * as React from "react";
 
-function UsersIcon({ stroke = "#bdbdbd", ...rest }) {
+function UsersIcon({ fill = "#464555", ...rest }) {
   return (
-    <svg fill="#bdbdbd" width={24} height={24} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <svg fill={fill} width={24} height={24} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" {...rest}>
     
     <path d="M55.76,8.24a4.26,4.26,0,0,0-6,0L8.24,49.76a4.24,4.24,0,0,0,6,6L55.76,14.24A4.26,4.26,0,0,0,55.76,8.24Zm-7.89,11-3.16-3.16L48,12.83,51.17,16Zm-35,35.05a2.28,2.28,0,0,1-3.16,0,2.22,2.22,0,0,1,0-3.16L43.29,17.54l3.17,3.17ZM54.34,12.82l-1.76,1.76-3.16-3.16,1.76-1.76a2.23,2.23,0,1,1,3.16,3.16Z"/>
     

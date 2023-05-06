@@ -10,7 +10,7 @@ import {
   LogoIcon,
   LogoutIcon,
   UsersIcon,
-  VideosIcon,
+  BusinessPromIcon,
   CustomerSupportIcon,
   JobIcon,
   SettingsIcon,
@@ -22,7 +22,7 @@ const menuItems = [
     { id: 1, label: "Dashboard", icon: HomeIcon, link: "/" },
     { id: 2, label: "Digital magazine", icon: DigitalMagazineIcon, link: "/posts" },
     { id: 3, label: "Smart Designers", icon: UsersIcon, link: "/users" },
-    { id: 4, label: "Business Promotion", icon: VideosIcon, link: "/tutorials" },
+    { id: 4, label: "Business Promotion", icon: BusinessPromIcon, link: "/tutorials" },
     { id: 5, label: "Job Connector", icon: JobIcon, link: "/jobs" },
     { id: 6, label: "Customer Support", icon: CustomerSupportIcon, link: "/customersupport" },
     { id: 7, label: "Group and Community", icon: GroupIcon, link: "/group" },
@@ -64,7 +64,8 @@ const menuItems = [
       return classNames(
         "flex items-center cursor-pointer rounded w-full overflow-hidden whitespace-nowrap",
         {
-    ["bg-secondary"]:activeMenu.label === menu.label,
+          "bg-secondary": activeMenu && activeMenu.label === menu.label,
+          "text-black":  activeMenu && activeMenu.label !== menu.label,
           
         }
       );
@@ -115,16 +116,21 @@ const menuItems = [
                   <Link href={menu.link}>
                     <a className="flex py-4 px-3 items-center w-full h-full">
                       <div style={{ width: "2.5rem"}}>
-                  <Icon />
+                      <Icon className={classNames({
+                         "stroke-text-primary": activeMenu && activeMenu.label === menu.label,
+                         "fill-none": activeMenu && activeMenu.label === menu.label,
+                    })} />
                       </div>
                   
                     
                       {!toggleCollapse && (
-                        <span
-                          className={classNames(
-                            "text-sm  font-medium text-text-light hover:text-md  "
-                          )}
-                        >
+                       <span
+                       className={classNames(
+                         "text-sm  font-medium",
+                         { "text-primary": activeMenu && activeMenu.label === menu.label },
+                         { "text-grey hover:text-md": activeMenu && activeMenu.label !== menu.label }
+                       )}
+                     >
                           {menu.label}
                         </span>
                       )}
@@ -139,11 +145,12 @@ const menuItems = [
     
         <div className={`${getNavItemClasses({})} px-3 py-4 bg-primary text-white `}>
           <div style={{ width: "2.5rem" }}>
-            <LogoutIcon />
+            <LogoutIcon className={classNames("stroke-text-primary") } 
+            />
           </div>
           {!toggleCollapse && (
             <span className={classNames("text-md font-medium")}>
-              Logout
+              Log Out
             </span>
           )}
         </div>

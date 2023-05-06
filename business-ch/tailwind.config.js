@@ -21,7 +21,8 @@ module.exports = {
       greythree: '#f5f5f5',
       greyfour: '#eeeeee',
       greyfive: '#e0e0e0',
-
+      green: '#4ade80',
+    
       text: {
         DEFAULT: "#1F2937",
         light: "#bdbdbd",
